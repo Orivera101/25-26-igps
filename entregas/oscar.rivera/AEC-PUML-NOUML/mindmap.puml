@@ -1,0 +1,92 @@
+@startmindmap
+<style>
+mindmapDiagram {
+  node {
+    BackgroundColor lightblue
+    LineColor darkblue
+    FontColor black
+  }
+  :depth(1) {
+    BackgroundColor #2C3E50
+    FontColor white
+    FontStyle bold
+    FontSize 18
+  }
+  .mecanicas * {
+    BackgroundColor #E74C3C
+    FontColor white
+  }
+  .diseno * {
+    BackgroundColor #3498DB
+    FontColor white
+  }
+  .construccion * {
+    BackgroundColor #9B59B6
+    FontColor white
+  }
+  .narrativa * {
+    BackgroundColor #F39C12
+    FontColor white
+  }
+  .audio * {
+    BackgroundColor #16A085
+    FontColor white
+  }
+  .recursos * {
+    BackgroundColor #E67E22
+    FontColor white
+  }
+}
+</style>
+
+* Wandering Party\n(City Builder)
+
+left side
+
+** 🎮 Mecánicas <<mecanicas>>
+*** Ciclo día/noche
+*** Biomas distintos
+**** Selección aleatoria
+**** Recursos únicos por bioma
+*** Desastres Naturales
+*** Gestión de recursos
+*** Eventos Aleatorios
+**** Según bioma
+**** Según clima
+**** Según decisiones
+
+** 🎨 Diseño <<diseno>>
+*** Estilo visual Steampunk
+*** Colores vibrantes
+*** Personajes caricaturescos
+*** 3D
+**** Low poly
+
+** 🏗️ Construcción <<construccion>>
+*** Vagón principal
+*** Edificios
+**** Vivienda
+**** Servicios
+
+right side
+
+** 📖 Narrativa <<narrativa>>
+*** Mundo Postapocalíptico
+**** Ruinas
+**** Naturaleza hostil
+*** Supervivencia
+**** Recursos escasos
+*** Personajes Guía y Exploradores
+*** Misiones y objetivos
+*** Historia sencilla
+**** Jugabilidad primero
+
+** 🎵 Música y Sonido <<audio>>
+*** Banda sonora ambiental
+**** Por bioma
+**** Por clima
+*** Efectos de sonido inmersivos
+**** Ambientales
+**** Feedback jugador
+
+@endmindmap
