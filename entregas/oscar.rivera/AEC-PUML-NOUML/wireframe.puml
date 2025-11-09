@@ -1,0 +1,103 @@
+@startsalt
+title Wandering Party - Interfaz Principal del Juego
+
+{+
+  {* 🏭 WANDERING PARTY | 💰 5,420 | ⚙️ Día 45 - Otoño | 👥 24 Habitantes | 😊 Moral: 72% | [⏸️ Pausa] | [💾 Guardar] | [⚙️ Opciones] }
+  {/
+    ==
+    {
+      {T
+        + 🏗️ Construcción
+        ++ 🏭 Producción
+        ++ 🏠 Residencial
+        ++ 🛡️ Defensa
+        ++ 🔬 Investigación
+        + 👥 Ciudadanos
+        ++ 👨‍🔧 Ingenieros
+        ++ 🗺️ Exploradores
+        ++ 👷 Trabajadores
+        ++ 🔬 Científicos
+        + 📦 Recursos
+        ++ ⛏️ Básicos
+        ++ 🔧 Avanzados
+        ++ 💱 Comercio
+        + 🗺️ Mapa
+        ++ 🌍 Biomas
+        ++ 🚂 Rutas
+        ++ 📍 Puntos de Interés
+      }
+      |
+      {
+        {#
+          ==== 🎮 VISTA PRINCIPAL DEL VAGÓN ====
+          .
+          ┌─────────────────────────────────────────────┐
+          │                                             │
+          │    🏭      🏠🏠     🔬                      │
+          │                                             │
+          │    🏠      🏭      🏠                       │
+          │                                             │
+          │    🏠      🏠      🛡️                      │
+          │                                             │
+          │         [VAGÓN ERRANTE]                     │
+          │                                             │
+          └─────────────────────────────────────────────┘
+          .
+          🌍 Bioma Actual: **Desierto Industrial** | 🌡️ 45°C
+          ⛽ Combustible: 350/500 | ⚡ Velocidad: 15.0 km/h
+          📍 Destino: Bosque Mecánico (1,500 km) ⏱️ ETA: 6 días
+        }
+        --
+        {
+          {T
+            + 📊 Estado | 🏗️ Construir | 📋 Misiones | ⚙️ Tecnología
+          }
+          ==
+          {
+            <b>🏗️ EDIFICIOS DISPONIBLES
+            .
+            {#FFEBCD
+              [🏭 Fábrica de Vapor]  | 💰 500 | ⚙️ 100 hierro, 50 madera, 25 engranajes
+              [🏠 Vivienda Básica]   | 💰 100 | ⚙️ 30 madera, 10 hierro
+              [🔬 Laboratorio]       | 💰 1500 | ⚙️ 200 hierro, 50 cristal, 60 engranajes
+              [⚡ Generador]         | 💰 600 | ⚙️ 120 hierro, 80 cobre, 30 cristal
+            }
+          }
+        }
+      }
+      |
+      {
+        {#FFFACD
+          <b>📋 PANEL DE INFORMACIÓN
+          ==
+          <b>🎯 MISIÓN ACTUAL:
+          "Explorar el Bosque Mecánico"
+          Progreso: 80%
+          .
+          <b>⚠️ ALERTAS:
+          • Moral baja en Vivienda #2
+          • Combustible al 70%
+          • Tormenta de arena en 2 días
+          .
+          <b>📊 RECURSOS CRÍTICOS:
+          {#
+            <b>Recurso | <b>Actual | <b>Capacidad 
+            ⚫ Carbón | 350 | 500 
+            🟤 Hierro | 280 | 400 
+            🟫 Madera | 120 | 300 
+            ⚙️ Engranajes | 45 | 150 
+            💧 Agua | 180 | 200 
+            🍖 Comida | 90 | 250 
+          }
+          [🔍 Ver Todos] | [➕ Contratar] | [📊 Estadísticas]
+        }
+      }
+    }
+    ==
+    {* 
+      [🏗️ Construir] | [🔧 Mejorar] | [🗺️ Mover Vagón] | [👥 Gestionar Ciudadanos] | [📦 Inventario] | [🔬 Investigar] | [💼 Comercio] | [❓ Ayuda]
+    }
+  }
+}
+
+@endsalt
