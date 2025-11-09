@@ -1,0 +1,123 @@
+@startgantt
+<style>
+ganttDiagram {
+  task {
+    BackGroundColor lightblue
+    LineColor darkblue
+  }
+  milestone {
+    BackGroundColor gold
+    LineColor darkorange
+    FontColor white
+    FontStyle bold
+  }
+}
+</style>
+
+title Wandering Party - Desarrollo del City Builder Steampunk
+printscale weekly
+saturday are closed
+sunday are closed
+
+' Colores por categoría
+!define PREPRODUCCION #E74C3C
+!define PRODUCCION #3498DB
+!define POSTPRODUCCION #16A085
+!define ARTE #9B59B6
+!define AUDIO #F39C12
+
+-- Fase 1 - Preproducción --
+[Concepto y Diseño] as [CONCEPT] lasts 14 days and is colored in PREPRODUCCION
+[CONCEPT] is 100% complete
+note bottom
+  Equipo: Game Designer, Narrative Designer
+end note
+
+[Prototipo de Mecánicas Core] as [PROTO_MECH] lasts 21 days and is colored in PREPRODUCCION
+[PROTO_MECH] starts at [CONCEPT]'s end
+[PROTO_MECH] is 100% complete
+note bottom
+  Equipo: Gameplay Programmer
+  Recursos: Unity/Godot, test builds
+end note
+
+[Arte Conceptual] as [CONCEPT_ART] lasts 28 days and starts at [CONCEPT]'s end and is colored in ARTE
+[CONCEPT_ART] is 100% complete
+note bottom
+  Equipo: Concept Artist, 3D Artist
+  Recursos: Blender, Photoshop
+end note
+
+[Milestone 1: Prototipo] as [M1] happens at [PROTO_MECH]'s end
+
+-- Fase 2 - Producción --
+[Modelado 3D Edificios] as [MODEL_BUILD] lasts 35 days and starts at [M1]'s end and is colored in ARTE
+[MODEL_BUILD] is 80% complete
+note bottom
+  Equipo: 3D Artists
+  Recursos: Blender, Substance Painter
+end note
+
+[Modelado Personajes] as [MODEL_CHAR] lasts 28 days and starts at [MODEL_BUILD]'s start and is colored in ARTE
+[MODEL_CHAR] is 75% complete
+
+[Sistema de Construcción] as [SYS_BUILD] lasts 21 days and starts at [M1]'s end and is colored in PRODUCCION
+[SYS_BUILD] is 70% complete
+note bottom
+  Equipo: Gameplay Programmer
+  Recursos: Grid system, placement tools
+end note
+
+[Sistema de Recursos] as [SYS_RESOURCE] lasts 21 days and starts at [SYS_BUILD]'s start and is colored in PRODUCCION
+[SYS_RESOURCE] is 65% complete
+
+[IA] as [AI_POP] lasts 28 days and starts at [SYS_RESOURCE]'s end and is colored in PRODUCCION
+[AI_POP] is 50% complete
+note bottom
+  Equipo: AI Programmer
+end note
+
+[Sistema de Eventos] as [SYS_EVENTS] lasts 21 days and starts at [AI_POP]'s start and is colored in PRODUCCION
+[SYS_EVENTS] is 45% complete
+
+[UI/UX] as [UI] lasts 35 days and starts at [SYS_BUILD]'s end and is colored in ARTE
+[UI] is 60% complete
+note bottom
+  Equipo: UI/UX Designer
+  Recursos: Figma
+end note
+
+[Música y SFX] as [AUDIO] lasts 42 days and starts at [MODEL_BUILD]'s start and is colored in AUDIO
+[AUDIO] is 40% complete
+note bottom
+  Equipo: Compositor, Sound Designer
+  Recursos: FL Studio, biblioteca SFX
+end note
+
+[Milestone 2: Beta] as [M2] happens at [AI_POP]'s end
+
+-- Fase 3 - Postproducción --
+[Testing y Balance] as [TESTING] lasts 28 days and starts at [M2]'s end and is colored in POSTPRODUCCION
+[TESTING] is 30% complete
+note bottom
+  Equipo: QA Testers, Game Designer}
+end note
+
+[Optimización] as [OPTIM] lasts 21 days and starts at [TESTING]'s start and is colored in POSTPRODUCCION
+[OPTIM] is 20% complete
+
+[Pulido Final] as [POLISH] lasts 14 days and starts at [TESTING]'s end and is colored in POSTPRODUCCION
+[POLISH] is 10% complete
+
+[Marketing y Trailer] as [MARKET] lasts 21 days and starts at [POLISH]'s start and is colored in POSTPRODUCCION
+[MARKET] is 5% complete
+note bottom
+  Equipo: Marketing, Video Editor
+  Recursos: Steam page, redes sociales
+end note
+
+[Milestone 3: v1.0] as [M3] happens at [POLISH]'s end
+
+-- Hitos --
+
+@endgantt
