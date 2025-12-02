@@ -1,0 +1,39 @@
+@startuml
+
+:Estudiante: as E
+:Profesor: as P
+:Bibliotecario: as B
+:Sistema: as S
+
+(Solicitar prestamo) as SP
+(Renovar prestamo) as RP
+(Devolver libro) as DL
+(Procesar devolución) as PD
+(Registrar prestamo manual) as RPM
+package "Gestión de reservar" {
+    (Hacer reserva) as GRHR
+    (Cancelar reserva) as GRCR
+    (Notificar Disponibilidad) as GRND
+} as GR
+package "Búsqueda y consulta" {
+    (Buscar en catálogo) as BCBC
+    (Ver historial de prestamos) as BCVHP
+    (Consultar estado de libro) as BCCEL
+} as BC
+package "Penalizaciones" {
+    (Calcular multa) as PCM
+    (Pagar multa online) as PPMO
+    (Aplciar penelización) as PAP
+} as Pen
+package "Reportes" {
+    (Generar reportes de préstamos) as RGRP
+    (Generar reportes de multas) as RGRM
+} as R
+
+B --> (PD)
+B --> (RPM)
+S --> (GRND)
+B --> (PAP)
+B --> R
+
+@enduml
